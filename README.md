@@ -8,7 +8,7 @@
 xkcd style password generator parsing Trump related words and taking user input for options
 
 ## Screencast Demo
-<link to be here>
+<link to be here/>
 
 ## Details for Teaching Team
 On load of the page we check if file 'words.csv' exists. If not, we launch the below parsing algorithm for a pre-defined hard-coded URL:

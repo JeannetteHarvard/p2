@@ -33,8 +33,8 @@ require('dictionary.php')
       <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value='<?php echo $numberOfWords ?>'> (Maximum 9)
       <br>
 
-      <input type="radio" name="delimiterCapital"  <?php echo !$delimiterCapital ? 'checked' : '' ?> value="">&nbsp;Hyphens & lower case<br>
-      <input type="radio" name="delimiterCapital" <?php echo $delimiterCapital ? 'checked' : '' ?> value="on">&nbsp;Capital case
+      <input type="radio" name="delimiterCapital"  <?php echo !$delimiterCapital ? 'checked' : '' ?> value="">&nbsp;Hyphens  & lower case<br>
+      <input type="radio" name="delimiterCapital" <?php echo $delimiterCapital ? 'checked' : '' ?> value="on">&nbsp;camelCase
       <br>
 
       <label for='includeANumber'>Include a Number (0-999)</label>
