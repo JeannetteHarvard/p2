@@ -1,5 +1,7 @@
 <?php
 
+if (!file_exists('words.csv')) {
+
 $contents = file_get_contents("https://en.wikipedia.org/wiki/Donald_Trump");
 
 $contents = strip_tags($contents);
@@ -26,14 +28,26 @@ $clean_contents = array_filter($clean_contents, function($e) { return !preg_matc
 
 $clean_contents = array_unique($clean_contents);
 
-file_put_contents('words.txt', join($clean_contents, "\n"));
+file_put_contents('words.csv', join($clean_contents, "\n"));
 
-echo $clean_contents;
+//echo $clean_contents;
 
+//var_export($clean_contents);
+
+}
+
+$words = file_get_contents('words.csv');
+$words = explode("\n", $words);
+shuffle($words);
+//var_export($words);
+
+$i = 10;
+$password = [];
+
+for ($i = 0; $i < 10; $i++) {
+  $password[] = $words[$i];
+}
+$password = join($password, '-');
+
+var_export($password);
  ?>
-
- <pre>
-
-<?php var_export($clean_contents); ?>
-
- </pre>
