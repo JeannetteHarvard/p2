@@ -27,6 +27,10 @@ require('dictionary.php')
       <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value='<?php echo $numberOfWords ?>'> (Maximum 9)
       <br>
 
+      <input type="radio" name="wordsDelimiter"  <?php echo !$wordsDelimiter ? 'checked' : '' ?> value="">Dashes & lower case<br>
+      <input type="radio" name="wordsDelimiter" <?php echo $wordsDelimiter ? 'checked' : '' ?> value="on">Capital case
+      <br>
+
       <label for='includeANumber'>Include A Number (0-999)</label>
       <input type='checkbox' name='includeANumber' id='includeANumber' <?php echo $includeANumber ? 'checked' : '' ?>>
       <br>
