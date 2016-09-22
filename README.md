@@ -1,4 +1,4 @@
-# Project 2 for CSCI E-15 Dynamic Web Applications
+# Project 2 for DWA15
 ## Password Generator
 
 ### Author
