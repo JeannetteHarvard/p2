@@ -24,11 +24,11 @@ require('dictionary.php')
 
     <form>
       <label for='numberOfWords'>Number of Words</label>
-      <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value=''> (Maximum 9)
+      <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value='<?php echo $numberOfWords ?>'> (Maximum 9)
       <br>
 
       <label for='includeANumber'>Include A Number</label>
-      <input type='checkbox' name='includeANumber' id='includeANumber' checked>
+      <input type='checkbox' name='includeANumber' id='includeANumber' <?php echo $includeANumber ? 'checked' : '' ?>>
       <br>
 
       <label for='includeASymbol'>Include A Symbol</label>

@@ -41,10 +41,12 @@ $words = explode("\n", $words);
 shuffle($words);
 //var_export($words);
 
-$i = 10;
 $password = [];
+$numberOfWords = isset ($_GET['numberOfWords']) ? (int) $_GET['numberOfWords'] : 5;
+$includeANumber = isset($_GET['includeANumber']) ? $_GET['includeANumber'] == 'on' : false;
 
-for ($i = 0; $i < 10; $i++) {
+
+for ($i = 0; $i < $numberOfWords; $i++) {
   $password[] = $words[$i];
 }
 $password = join($password, '-');
