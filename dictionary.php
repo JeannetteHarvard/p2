@@ -43,7 +43,7 @@ shuffle($words);
 
 $password = [];
 
-$numberOfWords = $_GET['numberOfWords'];
+$numberOfWords = isset($_GET['numberOfWords']) ? $_GET['numberOfWords'] : 3;
 
 // let's check number of words set by user
 if (!is_numeric($numberOfWords)){
