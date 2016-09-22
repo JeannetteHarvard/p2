@@ -10,7 +10,8 @@ if (!file_exists('words.csv')) {
   $url = 'http://en.wikipedia.org/wiki/Donald_Trump';
   //$url = "http://www.politico.com/story/2016/07/full-transcript-donald-trump-nomination-acceptance-speech-at-rnc-225974";
   echo $url;
-  $contents = file_get_contents(urlencode($url));
+  //$contents = file_get_contents(urlencode($url));
+  $contents = file_get_contents($url);
   //$contents = file_get_contents("http://en.wikipedia.org/wiki/Donald_Trump");
   $contents = strip_tags($contents);
 
