@@ -32,7 +32,7 @@ require('dictionary.php')
       <br>
 
       <label for='includeASymbol'>Include A Symbol</label>
-      <input type='checkbox' name='includeASymbol' id='includeASymbol' <?php echo $includeANumber ? 'checked' : '' ?>>
+      <input type='checkbox' name='includeASymbol' id='includeASymbol' <?php echo $includeASymbol ? 'checked' : '' ?>>
       <br>
 
       <input type='submit' value='Generate New Password!'>

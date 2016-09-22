@@ -46,6 +46,10 @@ $numberOfWords = isset ($_GET['numberOfWords']) ? (int) $_GET['numberOfWords'] :
 $includeANumber = isset($_GET['includeANumber']) ? $_GET['includeANumber'] == 'on' : false;
 $includeASymbol = isset($_GET['includeASymbol']) ? $_GET['includeASymbol'] == 'on' : false;
 
+// Checking number of words to be within limits
+$numberOfWords = min(9, $numberOfWords);
+$numberOfWords = max(1, $numberOfWords);
+
 for ($i = 0; $i < $numberOfWords; $i++) {
   $password[] = $words[$i];
 }
@@ -55,7 +59,7 @@ if($includeANumber){
   $password .= (string) mt_rand(0, 999);
 }
 
-if($includeANumber){
+if($includeASymbol){
   $symbols =  '!"#$%&\'()*+,-.:;<=>?@[\]^_`{|}~';
   $random_symbol = substr($symbols, mt_rand(0, strlen($symbols) - 1), 1);
   $password .= $random_symbol;
