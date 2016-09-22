@@ -7,8 +7,8 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 // First, let's check whether the file words.csv exists, and if not, we'll parse Wikipedia Trump page for words
 if (!file_exists('words.csv')) {
 
-  $url = 'http://en.wikipedia.org/wiki/Donald_Trump';
-  //$url = "http://www.politico.com/story/2016/07/full-transcript-donald-trump-nomination-acceptance-speech-at-rnc-225974";
+  //$url = 'http://en.wikipedia.org/wiki/Donald_Trump';
+  $url = "http://www.politico.com/story/2016/07/full-transcript-donald-trump-nomination-acceptance-speech-at-rnc-225974";
   echo $url;
   //$contents = file_get_contents(urlencode($url));
   $contents = file_get_contents($url);
