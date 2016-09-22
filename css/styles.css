@@ -2,6 +2,7 @@ body {
     background-image: url("../img/trump.jpg");
     background-size: cover;
     background-position: top center;
+    background-repeat: no-repeat;
   }
   .password {
     font-size: 2em;
