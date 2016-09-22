@@ -18,7 +18,7 @@ if (!file_exists('words.csv')) {
   }
   $clean_contents = array_map("clean_my_words", $contents);
 
-  //$clean_contents = array_filter($clean_contents, function($e) { return strlen($e) > 3; });
+  // Let's remove the words which are too short or too long
   $clean_contents = array_filter($clean_contents, function ($e) { return strlen($e) > 3 && strlen($e) < 16; });
 
   // looking for any non alphabetical symbols, in that case return truth inverted to false by '!', in which case the array item is removed
@@ -34,13 +34,28 @@ if (!file_exists('words.csv')) {
 
 }
 
+$error_message = "";
+// Let's get words out of the file!
 $words = file_get_contents('words.csv');
 $words = explode("\n", $words);
 shuffle($words);
 //var_export($words);
 
 $password = [];
-$numberOfWords = isset ($_GET['numberOfWords']) ? (int) $_GET['numberOfWords'] : 5;
+
+$numberOfWords = $_GET['numberOfWords'];
+
+// let's check number of words set by user
+if (!is_numeric($numberOfWords)){
+  $error_message = "For <i>number of words</i> please enter <i>a number</i>.<br>For now we'll set the number to 3!";
+  $numberOfWords = 3;
+} elseif ((1 <= $numberOfWords) && ($numberOfWords <= 9)) {
+  //$error_message = "All is Ok!";
+} else {
+  $error_message = "The <i>number of words</i> should be in the range <i>from 1 to 9</i>!<br>For now we'll set the number to 5!";
+  $numberOfWords = 5;
+}
+
 $includeANumber = isset($_GET['includeANumber']) ? $_GET['includeANumber'] == 'on' : false;
 $includeASymbol = isset($_GET['includeASymbol']) ? $_GET['includeASymbol'] == 'on' : false;
 $delimiterCapital = isset($_GET['delimiterCapital']) ? $_GET['delimiterCapital'] == 'on' : false;

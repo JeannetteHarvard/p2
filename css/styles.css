@@ -11,6 +11,10 @@ body {
     text-shadow: 2px 2px #7A4D00;
     margin-top: 160px
   }
+    .error_message {
+      color: red;
+      font-weight: bold;
+    }
 
   .note {
     font-size: .8em

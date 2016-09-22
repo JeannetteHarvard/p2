@@ -24,6 +24,8 @@ require('dictionary.php')
   <div class='container'>
     <h1>Trump Password Generator</h1>
 
+    <p class="error_message"><?php echo $error_message; ?></p>
+
     <form>
       <label for='numberOfWords'>Number of Words</label>
       <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value='<?php echo $numberOfWords ?>'> (Maximum 9)
@@ -33,11 +35,11 @@ require('dictionary.php')
       <input type="radio" name="delimiterCapital" <?php echo $delimiterCapital ? 'checked' : '' ?> value="on">&nbsp;Capital case
       <br>
 
-      <label for='includeANumber'>Include A Number (0-999)</label>
+      <label for='includeANumber'>Include a Number (0-999)</label>
       <input type='checkbox' name='includeANumber' id='includeANumber' <?php echo $includeANumber ? 'checked' : '' ?>>
       <br>
 
-      <label for='includeASymbol'>Include A Symbol</label>
+      <label for='includeASymbol'>Include a Symbol</label>
       <input type='checkbox' name='includeASymbol' id='includeASymbol' <?php echo $includeASymbol ? 'checked' : '' ?>>
       <br>
 
