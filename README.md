@@ -14,10 +14,11 @@ xkcd style password generator
 <link to be here>
 
 ## Details for teaching team
-No specific instructions, no login required.
+words.csv generation from https://en.wikipedia.org/wiki/Donald_Trump
 
 ## Outside code
-No outside plugins, libraries, packages or outside code were used in the project.
+bootstrap, wikipedia (https://en.wikipedia.org/wiki/Donald_Trump)
+trump image
 
 ## Project submission date
 September 22, 2016
