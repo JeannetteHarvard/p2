@@ -15,23 +15,7 @@ require('dictionary.php')
 
   <link href='//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css' rel="stylesheet">
 
-
-  <style>
-  body {
-      background-image: url(img/trump.jpg);
-      background-size: cover;
-      background-position: top center;
-    }
-    .password {
-      font-size: 2em;
-      text-align: center;
-      color: #E39000;
-      font-weight: bold;
-      text-shadow: 2px 2px #7A4D00;
-    }
-
-
-  </style>
+  <link href='css/styles.css' rel='stylesheet'>
 
 </head>
 
@@ -59,9 +43,9 @@ require('dictionary.php')
 
       <input type='submit' value='Generate New Trump Password!'>
       <br>
-      Note: the words are taken from https://en.wikipedia.org/wiki/Donald_Trump 
+      <p class=note>Note: the words are taken from https://en.wikipedia.org/wiki/Donald_Trump </p>
 
-      <br><br><br><br><br><br><br><br><br>
+
 
       <p class="password"><?php echo $password ?></p>
 

@@ -1,0 +1,17 @@
+body {
+    background-image: url("../img/trump.jpg");
+    background-size: cover;
+    background-position: top center;
+  }
+  .password {
+    font-size: 2em;
+    text-align: center;
+    color: #E39000;
+    font-weight: bold;
+    text-shadow: 2px 2px #7A4D00;
+    margin-top: 160px
+  }
+
+  .note {
+    font-size: .8em
+  }
