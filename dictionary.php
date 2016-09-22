@@ -1,7 +1,7 @@
 <?php
 
-error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
-ini_set('display_errors', 1); # Display errors on page (instead of a log file)
+//error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
+//ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 
 
 // First, let's check whether the file words.csv exists, and if not, we'll parse Wikipedia Trump page for words
