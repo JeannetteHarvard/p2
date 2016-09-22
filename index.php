@@ -13,6 +13,7 @@ require('dictionary.php')
   <meta name="description" content="Password Generator">
   <meta name="author" content="Jeannette">
 
+  <link href='//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css' rel="stylesheet">
 </head>
 
 <body>
