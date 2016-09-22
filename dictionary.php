@@ -44,12 +44,25 @@ shuffle($words);
 $password = [];
 $numberOfWords = isset ($_GET['numberOfWords']) ? (int) $_GET['numberOfWords'] : 5;
 $includeANumber = isset($_GET['includeANumber']) ? $_GET['includeANumber'] == 'on' : false;
-
+$includeASymbol = isset($_GET['includeASymbol']) ? $_GET['includeASymbol'] == 'on' : false;
 
 for ($i = 0; $i < $numberOfWords; $i++) {
   $password[] = $words[$i];
 }
 $password = join($password, '-');
+
+if($includeANumber){
+  $password .= (string) mt_rand(0, 999);
+}
+
+if($includeANumber){
+  $symbols =  '!"#$%&\'()*+,-.:;<=>?@[\]^_`{|}~';
+  $random_symbol = substr($symbols, mt_rand(0, strlen($symbols) - 1), 1);
+  $password .= $random_symbol;
+}
+
+
+
 
 //var_export($password);
  ?>

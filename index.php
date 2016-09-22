@@ -27,12 +27,12 @@ require('dictionary.php')
       <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value='<?php echo $numberOfWords ?>'> (Maximum 9)
       <br>
 
-      <label for='includeANumber'>Include A Number (1-999)</label>
+      <label for='includeANumber'>Include A Number (0-999)</label>
       <input type='checkbox' name='includeANumber' id='includeANumber' <?php echo $includeANumber ? 'checked' : '' ?>>
       <br>
 
       <label for='includeASymbol'>Include A Symbol</label>
-      <input type='checkbox' name='includeASymbol' id='includeASymbol' checked>
+      <input type='checkbox' name='includeASymbol' id='includeASymbol' <?php echo $includeANumber ? 'checked' : '' ?>>
       <br>
 
       <input type='submit' value='Generate New Password!'>
