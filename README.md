@@ -20,10 +20,8 @@ Now, when we have our vocabulary set up, we read the contents of our file into a
 
 ## Outside code & sources
 - Bootstrap CSS: <http://netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css/>
-- The words for password generator are parsed from the below webpage: <https://en.wikipedia.org/wiki/Donald_Trump/>
+- The words for password generator are parsed from the below webpage: <http://www.politico.com/story/2016/07/full-transcript-donald-trump-nomination-acceptance-speech-at-rnc-225974>
 - The background image is borrowed from the following video: <https://www.youtube.com/watch?v=P1CqvyewyC4/>
 
 ## Project submission date
 September 22, 2016
-
-
