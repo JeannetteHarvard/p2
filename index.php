@@ -21,6 +21,11 @@ require('dictionary.php')
       color: blue;
       font-weight: bold;
     }
+  body {
+      background-image: url(img/trump.jpg);
+      background-size: cover;
+      background-position: top center;
+    }
   </style>
 
 </head>
@@ -28,7 +33,7 @@ require('dictionary.php')
 <body>
 
   <div class='container'>
-    <h1>xkcd Password Generator</h1>
+    <h1>Trump Password Generator</h1>
 
     <p class="password"><?php echo $password ?></p>
 
