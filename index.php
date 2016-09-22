@@ -9,7 +9,7 @@ require('dictionary.php')
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-  <title>CSCI-15 Project 2: xkcd Password Generator</title>
+  <title>Project 2: xkcd Password Generator</title>
   <meta name="description" content="Password Generator">
   <meta name="author" content="Jeannette">
 
