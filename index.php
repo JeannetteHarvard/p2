@@ -29,8 +29,8 @@ require('dictionary.php')
       <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value='<?php echo $numberOfWords ?>'> (Maximum 9)
       <br>
 
-      <input type="radio" name="wordsDelimiter"  <?php echo !$wordsDelimiter ? 'checked' : '' ?> value="">&nbsp;Dashes & lower case<br>
-      <input type="radio" name="wordsDelimiter" <?php echo $wordsDelimiter ? 'checked' : '' ?> value="on">&nbsp;Capital case
+      <input type="radio" name="delimiterCapital"  <?php echo !$delimiterCapital ? 'checked' : '' ?> value="">&nbsp;Dashes & lower case<br>
+      <input type="radio" name="delimiterCapital" <?php echo $delimiterCapital ? 'checked' : '' ?> value="on">&nbsp;Capital case
       <br>
 
       <label for='includeANumber'>Include A Number (0-999)</label>
@@ -45,11 +45,11 @@ require('dictionary.php')
       <br>
       <p class=note>Note: the words are taken from https://en.wikipedia.org/wiki/Donald_Trump </p>
 
-
+    </form>
 
       <p class="password"><?php echo $password ?></p>
 
-
+    </div>
 
 </body>
 </html>
