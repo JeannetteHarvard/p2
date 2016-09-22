@@ -5,7 +5,7 @@
 <http://p2.jeannette.nyc/>
 
 ## Description
-xkcd style password generator parsing Trump related words and taking user input for options
+xkcd style password generator creating vocabulary from a pre-determined hard-coded URL and taking user input for options
 
 ## Screencast Demo
 <http://screencast-o-matic.com/watch/cDQ3rhjqRy/>
