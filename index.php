@@ -47,7 +47,7 @@ require('dictionary.php')
 
       <input type='submit' value='Generate New Trump Password!'>
       <br>
-      <p class=note>Note: the words are parsed from <br>https://en.wikipedia.org/wiki/Donald_Trump </p>
+      <p class=note>Words Source: <a href="http://www.politico.com/story/2016/07/full-transcript-donald-trump-nomination-acceptance-speech-at-rnc-225974">Donald Trump 2016 RNC speech</a>
 
     </form>
 
