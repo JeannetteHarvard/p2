@@ -1,5 +1,5 @@
 <?php
-require('logic.php')
+require('dictionary.php')
 ?>
 
 <!doctype html>
@@ -20,7 +20,7 @@ require('logic.php')
   <div class='container'>
     <h1>xkcd Password Generator</h1>
 
-    <p>PasswordWillBeHere</p>
+    <p><font color=blue><b><?php echo $password ?></b></font></p>
 
     <form>
       <label for='numberOfWords'>Number of Words</label>

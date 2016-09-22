@@ -49,5 +49,5 @@ for ($i = 0; $i < 10; $i++) {
 }
 $password = join($password, '-');
 
-var_export($password);
+//var_export($password);
  ?>
