@@ -14,6 +14,15 @@ require('dictionary.php')
   <meta name="author" content="Jeannette">
 
   <link href='//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css' rel="stylesheet">
+
+
+  <style>
+    .password {
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -21,15 +30,15 @@ require('dictionary.php')
   <div class='container'>
     <h1>xkcd Password Generator</h1>
 
-    <p><font color=blue><b><?php echo $password ?></b></font></p>
+    <p class="password"><?php echo $password ?></p>
 
     <form>
       <label for='numberOfWords'>Number of Words</label>
       <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value='<?php echo $numberOfWords ?>'> (Maximum 9)
       <br>
 
-      <input type="radio" name="wordsDelimiter"  <?php echo !$wordsDelimiter ? 'checked' : '' ?> value="">Dashes & lower case<br>
-      <input type="radio" name="wordsDelimiter" <?php echo $wordsDelimiter ? 'checked' : '' ?> value="on">Capital case
+      <input type="radio" name="wordsDelimiter"  <?php echo !$wordsDelimiter ? 'checked' : '' ?> value="">&nbsp;Dashes & lower case<br>
+      <input type="radio" name="wordsDelimiter" <?php echo $wordsDelimiter ? 'checked' : '' ?> value="on">&nbsp;Capital case
       <br>
 
       <label for='includeANumber'>Include A Number (0-999)</label>
@@ -44,36 +53,3 @@ require('dictionary.php')
 
 </body>
 </html>
-
-
-
-
-<hr>
-
-
-
-
-<pre>
-TO INCLUDE:
-
- Forms
-  Inputs
-    Checkboxes, radiobuttions
-
-    => SUBMIT to generator.
-      Taking form data,
-      Generating a password
-
-      array_shuffle or shuffle
-      rand()
-      // million ways to accomplish this
-      // i.e. taking API?
-      // scraping external site with English words
-
-      // scrape it only once and put it into text file (file processing in php)
-      // or to .cvs (there are php functions for that, and will put it into array)
-
-      // (trump pwd generator :) )
-
-      // chr - returns ascii character based ascii code
-</pre>
