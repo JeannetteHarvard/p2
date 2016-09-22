@@ -27,7 +27,7 @@ require('dictionary.php')
       <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value='<?php echo $numberOfWords ?>'> (Maximum 9)
       <br>
 
-      <label for='includeANumber'>Include A Number</label>
+      <label for='includeANumber'>Include A Number (1-999)</label>
       <input type='checkbox' name='includeANumber' id='includeANumber' <?php echo $includeANumber ? 'checked' : '' ?>>
       <br>
 
