@@ -34,7 +34,6 @@ if (!file_exists('words.csv')) {
 
 }
 
-$error_message = "";
 // Let's get words out of the file!
 $words = file_get_contents('words.csv');
 $words = explode("\n", $words);
@@ -59,11 +58,6 @@ if (!is_numeric($numberOfWords)){
 $includeANumber = isset($_GET['includeANumber']) ? $_GET['includeANumber'] == 'on' : false;
 $includeASymbol = isset($_GET['includeASymbol']) ? $_GET['includeASymbol'] == 'on' : false;
 $delimiterCapital = isset($_GET['delimiterCapital']) ? $_GET['delimiterCapital'] == 'on' : false;
-
-// Checking number of words to be within limitsw
-
-$numberOfWords = min(9, $numberOfWords);
-$numberOfWords = max(1, $numberOfWords);
 
 // create array of the right size, capitalizing first letters if needed
 for ($i = 0; $i < $numberOfWords; $i++) {

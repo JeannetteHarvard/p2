@@ -24,14 +24,16 @@ require('dictionary.php')
   <div class='container'>
     <h1>Trump Password Generator</h1>
 
-    <p class="error_message"><?php echo $error_message; ?></p>
+    <?php if(isset($error_message)): ?>
+      <p class="error_message"><?php echo $error_message; ?></p>
+    <?php endif ?>
 
     <form>
       <label for='numberOfWords'>Number of Words</label>
       <input type='text' maxlength='1' size=1 name='numberOfWords' id='numberOfWords' value='<?php echo $numberOfWords ?>'> (Maximum 9)
       <br>
 
-      <input type="radio" name="delimiterCapital"  <?php echo !$delimiterCapital ? 'checked' : '' ?> value="">&nbsp;Dashes & lower case<br>
+      <input type="radio" name="delimiterCapital"  <?php echo !$delimiterCapital ? 'checked' : '' ?> value="">&nbsp;Hyphens & lower case<br>
       <input type="radio" name="delimiterCapital" <?php echo $delimiterCapital ? 'checked' : '' ?> value="on">&nbsp;Capital case
       <br>
 
@@ -45,7 +47,7 @@ require('dictionary.php')
 
       <input type='submit' value='Generate New Trump Password!'>
       <br>
-      <p class=note>Note: the words are taken from https://en.wikipedia.org/wiki/Donald_Trump </p>
+      <p class=note>Note: the words are parsed from <br>https://en.wikipedia.org/wiki/Donald_Trump </p>
 
     </form>
 
