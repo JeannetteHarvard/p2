@@ -9,6 +9,7 @@ xkcd style password generator creating vocabulary from a pre-determined hard-cod
 
 ## Screencast Demo
 <http://screencast-o-matic.com/watch/cDQ3rhjqRy/>
+PS: Truly apologize for the screencast sound quality. It was recorded in the Harvard HES Library supposedly silent student work room (I travel from NJ, so had no other silent place to go to).
 
 ## Details for Teaching Team
 On load of the page we check if file 'words.csv' exists. If not, we launch the below parsing algorithm for a pre-defined hard-coded URL:
