@@ -12,7 +12,8 @@ xkcd style password generator parsing Trump related words and taking user input 
 
 ## Details for Teaching Team
 On load of the page we check if file 'words.csv' exists. If not, we launch the below parsing algorithm for a pre-defined hard-coded URL:
-- First, we load all the contents from the url into a string
+- We inform the user that we are generating a new dictionary and indicate the source url
+- Then, we load all the contents from the url into a string
 - Next, we remove all html tags, transform the string into array and thoroughly clean the array items (leaving only alphabetic values, bringing to lower case, removing the page's tech garbage, too short / too long words, duplicates, etc)
 - When our words array is nice and clean we write it to the file 'words.csv'
 
